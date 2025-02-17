@@ -1,0 +1,73 @@
+.header
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    min-height: 200px;
+}
+
+.Top
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.Bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.VisaSökKnapp
+{
+    background-color: black;
+    max-width: 40px;
+    margin-left: 40px;
+}
+
+.Sökbox
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.SökSymbol
+{
+    height: 30px;
+    width: 30px;
+}
+
+.Logga
+{
+    width: 400px;
+    margin-right: 340px;
+    margin-left: 190px;
+}
+
+.VisaVarukorgKnapp
+{
+    background-color: black;
+    width: 40px ;
+}
+.Varukorg
+{
+    max-height: 30px;
+    max-width: 30px;
+}
+
+a
+{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
