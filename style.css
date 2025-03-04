@@ -1,6 +1,7 @@
 body
 {
     margin: 0px;
+    font-family: 'Abril FatFace', 'Playfair Display', 'Times New Roman', serif;
 }
 
 .Header
@@ -14,10 +15,11 @@ body
 
 .HeaderTop
 {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 
@@ -29,18 +31,18 @@ body
     margin:25px;
 }
 
-.VisaSökKnapp
-{
-    background-color: black;
-    max-width: 40px;
-    margin-left: 40px;
-}
-
-.Sökbox
+.SökBox
 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 25px;
+}
+
+.VisaSökKnapp
+{
+    background-color: black;
+    max-width: 40px;
 }
 
 .SökSymbol
@@ -52,8 +54,16 @@ body
 .Logga
 {
     width: 400px;
-    margin-right: 340px;
-    margin-left: 190px;
+}
+
+.Varukorg
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-right: 50px;
+    
 }
 
 .VisaVarukorgKnapp
@@ -61,7 +71,7 @@ body
     background-color: black;
     width: 40px;
 }
-.Varukorg
+.VarukorgBild
 {
     max-height: 30px;
     max-width: 30px;
@@ -79,5 +89,27 @@ a
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 20px;
+    background-color: #E8E8E8;  
+    justify-items: center;
+    row-gap: 20px;
 }
 
+.ProduktBox
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProduktBilder
+{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.LäggIVarukorg
+{
+    background-color: lightgreen;
+    border: 2px solid black;
+}
