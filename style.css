@@ -61,16 +61,15 @@ h2
 
     .SökSymbol
     {
-        max-height: 40px;
-        max-width: 40px;
-        object-fit: contain ;
+        max-height: 100%;
+        object-fit: contain;
 
     }
 
     .Sökfält
     {
         min-height: 40px;
-        min-width: 250px;
+        min-width: 15vw;
         border-radius: 0px;
         outline: none;
         border: none;
@@ -105,7 +104,7 @@ h2
 
     .Logga
     {
-        width: 400px;
+        width: 40vw;
     }
 
     .Varukorg
@@ -133,9 +132,9 @@ h2
 
     section
     {
-        display: flex;
-        background-color: grey;
-        justify-content: center;
+    display: flex;
+    background-color: grey;
+    justify-content: center;
     }
 
     main
@@ -153,43 +152,136 @@ h2
     }
 
     .ProduktBox
-{   
+    {   
     display: flex;
     max-width: 300px;
     flex-direction: column;
     border: solid black 1px;
     }
 
-.ProduktBilder
-{
+    .ProduktBilder
+    {
     max-width: 300px;
     max-height: 300px;
     border: solid black 1px;
-}
+    }
 
-.ProduktInfo
-{
+    .ProduktInfo
+    {
     text-align: center;
     background-color: #E8E8E8;
     border: solid black 1px;
-}
+    }
 
-.LäggIVarukorg
-{
+    .LäggIVarukorg
+    {
     background-color: lightgreen;
     border: solid black 1px;
-}
+    }
     
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px)
 {
     .HeaderTop
-    {
-    align-items: center;
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    {   align-items: center;
+        margin: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .HeaderBottom
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .SökBox
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .VisaSökKnapp
+    {
+        display: flex;
+        justify-content: center;
+        background-color: #47474747;
+        border: solid #47474747;
+        max-height: 40px;
+        max-width: 40px;
+        
+    }
+
+    .SökSymbol
+    {
+        max-height: 100%;
+        object-fit: contain;
+
+    }
+
+    .Sökfält
+    {
+        min-height: 40px;
+        border-radius: 0px;
+        outline: none;
+        border: none;
+        font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
+    }
+
+    input::placeholder 
+    {
+        padding: 0.5px;
+        color: black;
+        font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
+    }
+
+    .SökKnapp
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 40px;
+        max-width: 40px;
+        background-color: #47474747;
+        border: solid #47474747;
+        border-radius: 0px;
+        color: #ffffff;
+    }
+
+    .SökKnappText
+    {
+        max-height: 100%;
+        font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
+    }
+
+    .Logga
+    {
+        width: 40vw;
+    }
+
+    .Varukorg
+    {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    }
+
+    .VisaVarukorgKnapp
+    {
+    max-height: auto;
+    max-width: 40px;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    background-color: black;
+    }
+
+    .VarukorgBild
+    {
+    max-height: auto;
+    max-width: 40px;
+    }
 }
