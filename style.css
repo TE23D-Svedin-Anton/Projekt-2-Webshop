@@ -16,21 +16,22 @@ a
 }
 
 h2
-{
+    {
     color: #ffffff;
     font-size: calc(1rem + 1vw);
     margin-left: 10px;
     margin-right: 10px;
-}
+    white-space: nowrap;
+    }
 
-@media screen and (min-width: 1025px)
+@media screen and (min-width: 1024px)
 {
-
     .HeaderTop
     {
         align-items: center;
         margin: 25px;
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -46,6 +47,10 @@ h2
         display: flex;
         flex-direction: row;
         align-items: center;
+        max-width: 19vw;
+        max-height: 4vw;
+        margin-left: 1vw;
+        margin-right: 7vw;
     }
 
     .VisaSökKnapp
@@ -54,8 +59,8 @@ h2
         justify-content: center;
         background-color: #47474747;
         border: solid #47474747;
-        max-height: 40px;
-        max-width: 40px;
+        max-height: 4vw;
+        max-width: 4vw;
         
     }
 
@@ -68,8 +73,8 @@ h2
 
     .Sökfält
     {
-        min-height: 40px;
-        min-width: 15vw;
+        min-height: 4vw;
+        min-width: 11vw;
         border-radius: 0px;
         outline: none;
         border: none;
@@ -79,6 +84,8 @@ h2
     input::placeholder 
     {
         padding: 0.5px;
+        min-height: 4vw;
+        min-width: 11vw;
         color: black;
         font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
     }
@@ -88,8 +95,8 @@ h2
         display: flex;
         justify-content: center;
         align-items: center;
-        max-height: 40px;
-        max-width: 40px;
+        max-height: 4vw;
+        min-width: 4vw;
         background-color: #47474747;
         border: solid #47474747;
         border-radius: 0px;
@@ -98,13 +105,12 @@ h2
 
     .SökKnappText
     {
-        max-height: 100%;
         font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
     }
 
     .Logga
     {
-        width: 40vw;
+       min-width: 40vw;
     }
 
     .Varukorg
@@ -143,8 +149,8 @@ h2
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 15px;
-    width: 940px;
-    column-gap: 10px;
+    max-width: 90vw;
+    column-gap: 50px;
     background-color: #ffffff; 
     border: solid black; 
     justify-items: center;
@@ -154,15 +160,13 @@ h2
     .ProduktBox
     {   
     display: flex;
-    max-width: 300px;
+    max-width: 25vw;
     flex-direction: column;
     border: solid black 1px;
     }
 
     .ProduktBilder
     {
-    max-width: 300px;
-    max-height: 300px;
     border: solid black 1px;
     }
 
@@ -187,6 +191,7 @@ h2
     {   align-items: center;
         margin: 25px;
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -202,6 +207,8 @@ h2
         display: flex;
         flex-direction: row;
         align-items: center;
+        max-width: 20vw;
+        margin-left: 1vw;
     }
 
     .VisaSökKnapp
@@ -210,8 +217,8 @@ h2
         justify-content: center;
         background-color: #47474747;
         border: solid #47474747;
-        max-height: 40px;
-        max-width: 40px;
+        max-height: 4vw;
+        max-width: 4vw;
         
     }
 
@@ -219,12 +226,14 @@ h2
     {
         max-height: 100%;
         object-fit: contain;
+        min-width: 10vw;
 
     }
 
     .Sökfält
     {
-        min-height: 40px;
+        min-height: 4vw;
+        width: 12vw;
         border-radius: 0px;
         outline: none;
         border: none;
@@ -234,6 +243,8 @@ h2
     input::placeholder 
     {
         padding: 0.5px;
+        min-width: 12vw;
+        max-height: 4vw;
         color: black;
         font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
     }
@@ -243,8 +254,8 @@ h2
         display: flex;
         justify-content: center;
         align-items: center;
-        max-height: 40px;
-        max-width: 40px;
+        max-height: 4vw;
+        max-width: 4vw;
         background-color: #47474747;
         border: solid #47474747;
         border-radius: 0px;
@@ -259,7 +270,7 @@ h2
 
     .Logga
     {
-        width: 40vw;
+        min-width: 40vw;
     }
 
     .Varukorg
@@ -284,4 +295,212 @@ h2
     max-height: auto;
     max-width: 40px;
     }
+
+    section
+    {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    }
+
+    main
+    {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    max-width: 90vw;
+    column-gap: 10px;
+    background-color: #ffffff; 
+    border: solid black; 
+    justify-items: center;
+    row-gap: 15px;
+    }
+
+    .ProduktBox
+    {   
+    display: flex;
+    max-width: 40vw;
+    flex-direction: column;
+    border: solid black 1px;
+    }
+
+    .ProduktBilder
+    {
+    border: solid black 1px;
+    }
+
+    .ProduktInfo
+    {
+    text-align: center;
+    background-color: #E8E8E8;
+    border: solid black 1px;
+    }
+
+    .LäggIVarukorg
+    {
+    background-color: lightgreen;
+    border: solid black 1px;
+    }
+    
+}
+
+@media screen and (max-width: 767px)
+{
+
+    .HeaderTop
+    {
+        align-items: center;
+        margin: 25px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .HeaderBottom
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .SökBox
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 20vw;
+    }
+
+    .VisaSökKnapp
+    {
+        display: flex;
+        justify-content: center;
+        background-color: #47474747;
+        border: solid #47474747;
+        max-height: 4vw;
+        max-width: 4vw;
+        
+    }
+
+    .SökSymbol
+    {
+        max-height: 100%;
+        object-fit: contain;
+
+    }
+
+    .Sökfält
+    {
+        min-height: 4vw;
+        max-width: 10vw;
+        border-radius: 0px;
+        outline: none;
+        border: none;
+        font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
+    }
+
+    input::placeholder 
+    {
+        padding: 0.5px;
+        max-width: 10vw;
+        color: black;
+        font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
+    }
+
+    .SökKnapp
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 5vw;
+        max-width: 5vw;
+        background-color: #47474747;
+        border: solid #47474747;
+        border-radius: 0px;
+        color: #ffffff;
+    }
+
+    .SökKnappText
+    {
+        max-height: 100%;
+        font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
+    }
+
+    .Logga
+    {
+        max-width: 40vw;
+    }
+
+    .Varukorg
+    {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    max-width: 20vw;
+    }
+
+    .VisaVarukorgKnapp
+    {
+    max-height: auto;
+    max-width: 20vw;
+    display: flex;
+    justify-content: center;
+    border: solid black;
+    background-color: black;
+    }
+
+    .VarukorgBild
+    {
+    max-height: auto;
+    max-width: 40px;
+    }
+
+    section
+    {
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    }
+
+    main
+    {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    max-width: 90vw;
+    column-gap: 10px;
+    background-color: #ffffff; 
+    border: solid black; 
+    justify-items: center;
+    row-gap: 15px;
+    }
+
+    .ProduktBox
+    {   
+    display: flex;
+    max-width: 70vw;
+    flex-direction: column;
+    border: solid black 1px;
+    }
+
+    .ProduktBilder
+    {
+    border: solid black 1px;
+    }
+
+    .ProduktInfo
+    {
+    text-align: center;
+    background-color: #E8E8E8;
+    border: solid black 1px;
+    }
+
+    .LäggIVarukorg
+    {
+    background-color: lightgreen;
+    border: solid black 1px;
+    }
+    
 }
