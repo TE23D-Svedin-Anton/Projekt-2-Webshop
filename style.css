@@ -2,27 +2,65 @@ body
 {
     margin: 0px;
 }
-Header
+
+header
 {
     background-color: black;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 22vw;
+}
+
+header.shrunk
+{
+    height: 12vw;
 }
 
 a
 {
+    font-size: calc(0.09rem + 2vw);
+    color: #ffffff;
     font-family: 'Abril FatFace', 'Playfair Display', 'Times New Roman', serif;
     text-decoration: none;
-}
-
-h2
-    {
-    color: #ffffff;
-    font-size: calc(1rem + 1vw);
     margin-left: 10px;
     margin-right: 10px;
-    white-space: nowrap;
-    }
+}
+
+a.shrunk .Logga
+{
+    transform: translateY(-40%) scale(0.5);
+}
+
+
+a.shrunk h2
+{
+    transform: translateY(-140%);
+    margin-top: 8px;
+}
+
+.SökBox.shrunk 
+{
+    transform: translateY(-110%);   
+}
+
+.SökBox
+{
+display: flex;
+justify-self: left;
+}
+
+.SökSymbol
+{
+max-height: 100%;
+object-fit: contain;
+}
+
+.Varukorg.shrunk
+{
+transform: translateY(-110%); 
+}
 
 @media screen and (min-width: 1024px)
 {
@@ -33,18 +71,14 @@ h2
         justify-items: center;
         align-items: center;
         margin: 25px;
+
     }
 
     .HeaderBottom
     {
         display: flex;
         justify-content: center;
-    }
-
-    .SökBox
-    {
-        display: flex;
-        justify-self: left;
+        margin-top: -50px;
     }
 
     .VisaSökKnapp
@@ -56,12 +90,6 @@ h2
         max-height: 4vw;
         max-width: 4vw;
         
-    }
-
-    .SökSymbol
-    {
-        max-height: 100%;
-        object-fit: contain;
     }
 
     .Sökfält
@@ -103,11 +131,6 @@ h2
     .Logga
     {
         min-width: 40vw;
-    }
-
-    .Varukorg
-    {
-        justify-self: right;
     }
 
     .VisaVarukorgKnapp
@@ -186,12 +209,7 @@ h2
     {
         display: flex;
         justify-content: center;
-    }
-
-    .SökBox
-    {
-        display: flex;
-        justify-self: left;
+        margin-top: -50px;
     }
 
     .VisaSökKnapp
@@ -203,13 +221,6 @@ h2
         max-height: 4vw;
         max-width: 4vw;
         
-    }
-
-    .SökSymbol
-    {
-        max-height: 100%;
-        object-fit: contain;
-
     }
 
     .Sökfält
@@ -252,11 +263,6 @@ h2
     .Logga
     {
         min-width: 40vw;
-    }
-
-    .Varukorg
-    {
-        justify-self: right;
     }
 
     .VisaVarukorgKnapp
@@ -341,14 +347,6 @@ h2
         justify-content: center;
     }
 
-    .SökBox
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        max-width: 20vw;
-    }
-
     .VisaSökKnapp
     {
         display: flex;
@@ -358,13 +356,6 @@ h2
         max-height: 4vw;
         max-width: 4vw;
         
-    }
-
-    .SökSymbol
-    {
-        max-height: 100%;
-        object-fit: contain;
-
     }
 
     .Sökfält
@@ -407,14 +398,6 @@ h2
     .Logga
     {
         max-width: 40vw;
-    }
-
-    .Varukorg
-    {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    max-width: 20vw;
     }
 
     .VisaVarukorgKnapp
