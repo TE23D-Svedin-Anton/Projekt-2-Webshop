@@ -28,29 +28,23 @@ h2
 {
     .HeaderTop
     {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
         align-items: center;
         margin: 25px;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .HeaderBottom
     {
         display: flex;
-        flex-direction: row;
         justify-content: center;
     }
 
     .SökBox
     {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        max-width: 19vw;
-        max-height: 4vw;
-        margin-left: 1vw;
-        margin-right: 7vw;
+        justify-self: left;
     }
 
     .VisaSökKnapp
@@ -68,13 +62,13 @@ h2
     {
         max-height: 100%;
         object-fit: contain;
-
     }
 
     .Sökfält
     {
+        max-width: 13vw;
+        min-width: 13vw;
         min-height: 4vw;
-        min-width: 11vw;
         border-radius: 0px;
         outline: none;
         border: none;
@@ -84,8 +78,6 @@ h2
     input::placeholder 
     {
         padding: 0.5px;
-        min-height: 4vw;
-        min-width: 11vw;
         color: black;
         font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
     }
@@ -104,28 +96,22 @@ h2
     }
 
     .SökKnappText
-    {
+    { 
         font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
     }
 
     .Logga
     {
-       min-width: 40vw;
+        min-width: 40vw;
     }
 
     .Varukorg
     {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+        justify-self: right;
     }
 
     .VisaVarukorgKnapp
     {
-    max-height: auto;
-    max-width: 40px;
-    display: flex;
-    justify-content: center;
     border: solid black;
     background-color: black;
     }
@@ -188,27 +174,24 @@ h2
 @media screen and (min-width: 768px) and (max-width: 1024px)
 {
     .HeaderTop
-    {   align-items: center;
-        margin: 25px;
+    {
         display: grid;
-        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 25px;
     }
 
     .HeaderBottom
     {
         display: flex;
-        flex-direction: row;
         justify-content: center;
     }
 
     .SökBox
     {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        max-width: 20vw;
-        margin-left: 1vw;
+        justify-self: left;
     }
 
     .VisaSökKnapp
@@ -226,14 +209,14 @@ h2
     {
         max-height: 100%;
         object-fit: contain;
-        min-width: 10vw;
 
     }
 
     .Sökfält
     {
+        max-width: 13vw;
+        min-width: 13vw;
         min-height: 4vw;
-        width: 12vw;
         border-radius: 0px;
         outline: none;
         border: none;
@@ -243,8 +226,6 @@ h2
     input::placeholder 
     {
         padding: 0.5px;
-        min-width: 12vw;
-        max-height: 4vw;
         color: black;
         font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
     }
@@ -254,8 +235,8 @@ h2
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: 4vw;
         max-height: 4vw;
-        max-width: 4vw;
         background-color: #47474747;
         border: solid #47474747;
         border-radius: 0px;
@@ -275,17 +256,13 @@ h2
 
     .Varukorg
     {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+        justify-self: right;
     }
 
     .VisaVarukorgKnapp
     {
     max-height: auto;
     max-width: 40px;
-    display: flex;
-    justify-content: center;
     border: solid black;
     background-color: black;
     }
