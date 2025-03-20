@@ -6,7 +6,22 @@ const Sökfält = document.querySelector('.Sökfält');
 const VisaSökKnapp = document.querySelector('.VisaSökKnapp');
 const SökKnapp = document.querySelector('.SökKnapp');
 
-let varukorg = [];  
+let varukorg = []; 
+
+function sparaVarukorg() {
+    localStorage.setItem('varukorg', JSON.stringify(varukorg));
+}
+
+
+function laddaVarukorg() {
+    const sparadVarukorg = localStorage.getItem('varukorg');
+    if (sparadVarukorg) {   
+        varukorg = JSON.parse(sparadVarukorg);
+    }
+}
+
+laddaVarukorg();
+uppdateraVarukorg();
 
 VisaVarukorg.addEventListener('click', function() {
     DropDownVarukorg.classList.toggle('active');
@@ -35,7 +50,7 @@ LäggIVarukorgKnappar.forEach(button => {
             antal: 1
         });
     }
-
+        sparaVarukorg();
         uppdateraVarukorg();
     });
 });
@@ -83,11 +98,12 @@ function uppdateraVarukorg() {
         taBortKnapp.style.color = 'white';
         taBortKnapp.style.border = 'none';
         taBortKnapp.style.cursor = 'pointer';
-        taBortKnapp.style.width = '20%';
-        taBortKnapp.style.height = 'auto';
+        taBortKnapp.style.width = '50px';
+        taBortKnapp.style.height = '30px';
 
         taBortKnapp.addEventListener('click', function() {
             varukorg.splice(index, 1);
+            sparaVarukorg();
             uppdateraVarukorg();
         });
         listItem.appendChild(produktBild);
@@ -97,4 +113,3 @@ function uppdateraVarukorg() {
         VarukorgLista.appendChild(listItem);
     });
 }
-uppdateraVarukorg();
