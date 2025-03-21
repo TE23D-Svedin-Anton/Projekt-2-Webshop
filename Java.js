@@ -58,7 +58,7 @@ LäggIVarukorgKnappar.forEach(button => {
 function uppdateraVarukorg() {
     VarukorgLista.innerHTML = '';
 
-    if (varukorg.length === 0) {
+    if (varukorg.length == 0) {
         const tomMedelande = document.createElement('p');
         tomMedelande.textContent = 'Din varukorg är tom';
         VarukorgLista.appendChild(tomMedelande);

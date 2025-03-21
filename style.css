@@ -23,7 +23,7 @@ header
 {
     display: flex;
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 
 a
@@ -34,6 +34,11 @@ a
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+p
+{
+    font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
 }
 
 .SökBox
@@ -88,6 +93,17 @@ input::placeholder
 }
 
 .SökKnapp.active
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 4vw;
+    min-width: 4vw;
+    background-color: #47474750;
+    border: solid #47474750;
+    border-radius: 0px;
+    color: #ffffff;        
+}
 
 .SökKnappText
 { 
@@ -96,12 +112,12 @@ input::placeholder
 
 .Logga
 {
-    min-width: 40vw;
+    max-width: 40vw;
 }
 
 .Varukorg
 {
-    width: 24vw;
+    max-width: 24vw;
     background-color: black;
 }
 
@@ -140,6 +156,7 @@ section
     display: flex;
     background-color: grey;
     justify-content: center;
+    width: 100%;
 }
 
 .ProduktBilder
@@ -158,6 +175,7 @@ section
 {
     background-color: lightgreen;
     border: solid black 1px;
+    font-family: 'GFS Didot', 'Bodoni MT', 'Georgia', serif;
 }
 
 @media screen and (min-width: 1024px)
@@ -241,14 +259,6 @@ section
 
 @media screen and (max-width: 767px)
 {
-
-    .HeaderBottom
-{
-    display: flex;
-    justify-content: center;
-    margin-top: -25px;
-}
-
     a
     {
         font-size: calc(0.09rem + 1.5vw);
