@@ -98,8 +98,8 @@ function uppdateraVarukorg() {
         taBortKnapp.style.color = 'white';
         taBortKnapp.style.border = 'none';
         taBortKnapp.style.cursor = 'pointer';
-        taBortKnapp.style.width = '50px';
-        taBortKnapp.style.height = '30px';
+        taBortKnapp.style.minWidth = '50px';
+        taBortKnapp.style.minHeight = '30px';
 
         taBortKnapp.addEventListener('click', function() {
             varukorg.splice(index, 1);
